@@ -97,11 +97,12 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/* ------------- Base Header & Footer Styles ----------------- */
-
 .content-wrapper {
     width: 90%;
+    margin: 50px 0;
 }
+
+/* ------------- Base Header & Footer Styles ----------------- */
 
 header,
 footer {
@@ -120,15 +121,18 @@ header .content-wrapper {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    margin: 0;
 }
 
 .header-divider {
     width: 100%;
+    height: 1px;
+    margin: 10px 0 20px 0;
 }
 
 header nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-flow: row wrap;
     width: 60%;
@@ -137,9 +141,13 @@ header nav {
 header nav ul {
     display: flex;
     justify-content: space-between;
-    width: 45%;
+    width: 50%;
     list-style: none;
     padding-left: 0;
+}
+
+footer {
+    flex-direction: column;
 }
 
 .footer-content {
@@ -151,10 +159,6 @@ header nav ul {
 }
 
 footer .content-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
     width: 55%;
     margin: 50px 0;
 }
@@ -167,10 +171,6 @@ address.contact {
     margin: 0;
     width: 100%;
     font-style: normal;
-}
-
-address h4 {
-    margin: 0;
 }
 
 address p {
@@ -193,7 +193,7 @@ footer .social {
 
 footer .social-icons {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -203,11 +203,8 @@ footer .social-icons p {
     align-items: center;
 }
 
-.copyright {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
+footer .copyright {
+    margin: 20px 0;
 }
 
 /* ------------- Mobile Styles - Homepage ----------------- */
@@ -222,6 +219,7 @@ footer .social-icons p {
 
 .hero-area h1 {
     padding: 50px 0 330px 0;
+    width: 90%;
 }
 
 /* Aside */
@@ -234,14 +232,13 @@ aside {
 
 .form-description {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     flex-flow: row wrap;
-    padding: 55px 0;
 }
 
 .form {
-    width: 90%;
+    width: 100%;
 }
 
 input {
@@ -255,23 +252,17 @@ input {
 .features {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-flow: row wrap;
 }
 
-.features .content-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-}
 
 .features h2 {
-    display: flex;
-    justify-content: left;
+    margin-bottom: 60px;
+    padding-left: 5%;
 }
 
 .features article {
+    width: 55%;
     padding: 25px 0;
 }
 
@@ -283,8 +274,8 @@ input {
 .features-items {
     display: flex;
     justify-content: center;
+    align-content: center;
     flex-flow: row wrap;
-    width: 55%;
 }
 
 .features-item-description {
@@ -298,11 +289,10 @@ input {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    padding: 50px 0;
+    padding-left: 5%;
 }
 
 .reviews h2 {
-    margin: 0;
     padding-bottom: 25px;
 }
 
@@ -367,10 +357,6 @@ input {
     align-items: center;
     flex-flow: row wrap;
 }
-
-
-
-
 
 /* ==========================================================================
    Helper classes
@@ -458,15 +444,98 @@ input {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+    /* TABLET STYLES */
+    .content-wrapper {
+        max-width: 640px;
+        margin: 100px 0;
+    }
+
+    /* Header */
+    header {
+        display: flex;
+        justify-content:
+    }
+    
+    header .content-wrapper {
+        display: flex;
+        justify-content: center;
+        width: 75%;
+    }
+    
+    header nav {
+        width: 80%;
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .header-divider {
+        display: none;
+    }
+
+    /* Hero Area */
+    /* Aside */
+    aside .content-wrapper {
+        display: flex;
+        justify-content: center;
+        flex-flow: column nowrap;
+        margin: 50px 0;
+    }
+
+    aside .content-wrapper .form-description, aside .content-wrapper .form {
+        width: 50%;
+        margin: 0;
+    }
+
+    /* Features */
+    .features article {
+        display: flex;
+        justify-content:
+        align-items:
+        flex-flow:
+        flex-basis:
+    }
+
+    .features .features-item-description {
+        width:
+    }
+
+    /* Reviews */
+    .reviews article {
+        display: flex;
+        justify-content:
+    }
+
+    .reviews article div {
+        width:
+    }
+
+    /* Footer */
+    footer .content-wrapper {
+        width:
+        margin: 100px 0;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content:
+        align-items:
+    }
+
+    footer .contact {
+        margin-bottom: 0;
+    }
+
+    footer .copyright {
+        width:
+    }
 }
 
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+@media only screen and (min-width: 1200px) {
+    /* DESKTOP STYLES */
 }
 
 /* ==========================================================================
