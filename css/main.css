@@ -175,8 +175,7 @@ address.contact {
 
 address p {
     margin: 0;
-    padding: 20px 0;
-    text-align: center;
+    padding: 0;
 }
 
 footer .social {
@@ -189,6 +188,10 @@ footer .social {
 .social h4 {
     margin: 0;
     padding: 20px 0;
+}
+
+footer .contact p {
+    text-align: center;
 }
 
 footer .social-icons {
@@ -214,6 +217,12 @@ main {
     flex-flow: row wrap;
 }
 
+h2 {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
 /* Hero Area */ 
 
 .hero-area {
@@ -235,7 +244,7 @@ aside {
 
 .form-description {
     display: flex;
-    justify-content: left;
+    justify-content: flex-start;
     align-items: center;
     flex-flow: row wrap;
 }
@@ -291,7 +300,6 @@ input {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    padding-left: 5%;
 }
 
 .reviews h2 {
@@ -355,9 +363,17 @@ input {
 
 .contact-section {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-flow: row wrap;
+}
+
+.contact-info {
+    font-style: normal;
+}
+
+.contact-section address.contact {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 /* ==========================================================================
@@ -447,7 +463,8 @@ input {
    ========================================================================== */
 
 @media only screen and (min-width: 768px) {
-    /* TABLET STYLES */
+    /**** TABLET STYLES ****/
+    /**** MAIN PAGE ****/
     .content-wrapper {
         display: flex;
         justify-content: center;
@@ -458,7 +475,7 @@ input {
     /* Header */
     header {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
     }
     
     header .content-wrapper {
@@ -497,6 +514,8 @@ input {
 
     /* Aside */
     aside .content-wrapper {
+        display: flex;
+        justify-content: space-between;
         margin: 50px 0;
         width: 100%;
     }
@@ -557,6 +576,45 @@ input {
 
     footer .contact {
         margin-bottom: 0;
+    }
+
+    /**** ABOUT PAGE ****/
+    main {
+        width: 100%;
+    }
+    
+    .mission-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+ 
+    .mission-content p {
+        width: 48%;
+    }
+ 
+    .map {
+        width: 100%;
+    }
+
+    .contact-section, .content-wrapper h3 {
+        width: 100%;
+    }
+
+    .contact-info {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    /**** FAQ PAGE ****/
+    .faq .content-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .faq-content {
+        flex-basis: 45%;
     }
 }
 
