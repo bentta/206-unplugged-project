@@ -447,6 +447,8 @@ input {
 @media only screen and (min-width: 768px) {
     /* TABLET STYLES */
     .content-wrapper {
+        display: flex;
+        justify-content: center;
         max-width: 640px;
         margin: 100px 0;
     }
@@ -454,22 +456,22 @@ input {
     /* Header */
     header {
         display: flex;
-        justify-content:
+        justify-content: center;
     }
     
     header .content-wrapper {
         display: flex;
-        justify-content: center;
-        width: 75%;
+        justify-content: space-between;
+        width: 100%;
     }
     
     header nav {
-        width: 80%;
+        width: 35%;
     }
 
     header nav ul {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
 
     .header-divider {
@@ -477,12 +479,24 @@ input {
     }
 
     /* Hero Area */
-    /* Aside */
-    aside .content-wrapper {
+    main {
         display: flex;
         justify-content: center;
-        flex-flow: column nowrap;
+        flex-flow: row wrap;
+    }
+
+    .hero-area {
+        width: 100%;
+    }
+
+    .hero-area h1 {
+        width: 100%;
+    }
+
+    /* Aside */
+    aside .content-wrapper {
         margin: 50px 0;
+        width: 100%;
     }
 
     aside .content-wrapper .form-description, aside .content-wrapper .form {
@@ -490,47 +504,61 @@ input {
         margin: 0;
     }
 
+    input {
+        padding: 5px 0;
+        margin: 5px 0;
+    }
+
     /* Features */
     .features article {
         display: flex;
-        justify-content:
-        align-items:
-        flex-flow:
-        flex-basis:
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        flex-basis: 320px;
+    }
+
+    .features h2 {
+        padding: 0;
     }
 
     .features .features-item-description {
-        width:
+        width: 60%;
     }
 
     /* Reviews */
+    .reviews {
+        padding: 0;
+    }
+    
     .reviews article {
         display: flex;
-        justify-content:
+        justify-content: center;
     }
 
     .reviews article div {
-        width:
+        width: 50%;
+    }
+
+    .reviews h2 {
+        width: 100%;
     }
 
     /* Footer */
     footer .content-wrapper {
-        width:
+        width: 80%;
         margin: 100px 0;
     }
 
     .footer-content {
         display: flex;
-        justify-content:
-        align-items:
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-flow: nowrap;
     }
 
     footer .contact {
         margin-bottom: 0;
-    }
-
-    footer .copyright {
-        width:
     }
 }
 
