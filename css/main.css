@@ -619,7 +619,37 @@ input {
 }
 
 @media only screen and (min-width: 1200px) {
-    /* DESKTOP STYLES */
+    /**** DESKTOP STYLES ****/
+    /**** MAIN PAGE ****/
+    .content-wrapper {
+        display: flex;
+        justify-content: center;
+        max-width: 960px;
+        margin: 0;
+    }
+
+    /* ASIDE/FORM */
+    aside {
+        max-width: 800px;
+    }
+
+    aside .content-wrapper .form-description, aside .content-wrapper .form {
+        width: 40%;
+        margin: 0;
+    }
+
+    /* FEATURES */
+    .features {
+        margin: 100px 0;
+    }
+
+
+    /**** ABOUT PAGE ****/
+    .contact-info {
+        display: flex;
+        justify-content: space-between;
+        width: 65%;
+    }
 }
 
 /* ==========================================================================
