@@ -208,18 +208,22 @@ footer .copyright {
 }
 
 /* ------------- Mobile Styles - Homepage ----------------- */
+main {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
 
 /* Hero Area */ 
 
 .hero-area {
     display: flex;
     justify-content: center;
-    flex-flow: row wrap;
 }
 
 .hero-area h1 {
     padding: 50px 0 330px 0;
-    width: 90%;
+    width: 100%;
 }
 
 /* Aside */
@@ -227,7 +231,6 @@ footer .copyright {
 aside {
     display: flex;
     justify-content: center;
-    flex-flow: row wrap;
 }
 
 .form-description {
@@ -242,7 +245,7 @@ aside {
 }
 
 input {
-    width: 90%;
+    width: 100%;
     padding: 25px 0;
     margin: 17px 0;
 }
@@ -258,7 +261,6 @@ input {
 
 .features h2 {
     margin-bottom: 60px;
-    padding-left: 5%;
 }
 
 .features article {
@@ -517,11 +519,7 @@ input {
         flex-flow: row wrap;
         flex-basis: 320px;
     }
-
-    .features h2 {
-        padding: 0;
-    }
-
+    
     .features .features-item-description {
         width: 60%;
     }
