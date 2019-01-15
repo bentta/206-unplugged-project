@@ -129,6 +129,7 @@ h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.875em;
     font-weight: normal;
+    line-height: 1.125em;
     display: flex;
     justify-content: flex-start;
     width: 100%;
@@ -140,6 +141,7 @@ h4 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.125em;
     font-weight: normal;
+    margin: 0;
 }
  
 p {
@@ -154,9 +156,11 @@ figure {
  
 }
 
-address {
-    font-family: 'Poppins', sans-serif;
+address p {
+    font-family: 'Open Sans', sans-serif;
     font-size: 0.875em;
+    margin: 0;
+    padding: 0;
 }
 
 .content-wrapper {
@@ -234,21 +238,11 @@ address.contact {
     font-style: normal;
 }
 
-address p {
-    margin: 0;
-    padding: 0;
-}
-
 footer .social {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-}
-
-.social h4 {
-    margin: 0;
-    padding: 20px 0;
 }
 
 footer {
@@ -257,6 +251,8 @@ footer {
 
 footer .contact p {
     text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 footer .social-icons {
@@ -272,7 +268,7 @@ footer .social-icons p {
 }
 
 footer .copyright {
-    margin: 20px 0;
+    margin-bottom: 20px;
 }
 
 /* ------------- Mobile Styles - Homepage ----------------- */
@@ -290,8 +286,9 @@ main {
 }
 
 .hero-area h1 {
-    padding: 50px 0 330px 0;
+    padding-bottom: 250px;
     width: 100%;
+    margin: 0;
 }
 
 /* Aside */
@@ -400,6 +397,15 @@ aside .content-wrapper {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+    margin-bottom: 0;
+}
+
+.faq-content {
+    padding-bottom: 40px;
+}
+
+.faq h2 {
+    padding-bottom: 30px;
 }
 
 /* ------------- About Page Styles ----------------- */
@@ -448,12 +454,12 @@ aside .content-wrapper {
     flex-flow: row wrap;
 }
 
-.contact-section h2 {
-    width: 60%;
-}
-
 .contact-info {
     font-style: normal;
+}
+
+.contact-info h4 {
+    padding: 10px 0;
 }
 
 .contact-section address.contact {
@@ -464,7 +470,7 @@ aside .content-wrapper {
 
 /**** INPUT ELEMENTS ****/
 aside .form {
-    margin-top: 30px;
+    margin-top: 20px;
 }
    
 input[type=text] {
@@ -473,6 +479,7 @@ input[type=text] {
     padding: 20px 0;
     color: #2a423a;
     font-style: italic;
+    margin-top: 15px;
 }
    
 input[type=button] {
@@ -580,7 +587,7 @@ input[type=button] {
     /**** MAIN PAGE ****/
     .content-wrapper {
         max-width: 640px;
-        margin: 100px 0;
+        margin: 50px 0;
     }
 
     /* Header */
@@ -673,19 +680,26 @@ input[type=button] {
     }
 
     /* Footer */
-        .footer-content {
+    .footer-content {
         display: flex;
         align-items: center;
         flex-flow: nowrap;
     }
     
     footer .content-wrapper {
+        display: flex;
+        justify-content: center;
         width: 80%;
-        margin: 100px 0;
     }
 
     footer .contact {
         margin-bottom: 0;
+    }
+
+    .social {
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
     }
 
     /**** ABOUT PAGE ****/
@@ -710,6 +724,11 @@ input[type=button] {
     .contact-section {
         width: 100%;
     }
+
+    .contact-section h2 {
+        width: 70%;
+    }
+    
 
     .contact-info {
         display: flex;
