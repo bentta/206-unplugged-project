@@ -128,7 +128,7 @@ h1 {
 h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.875em;
-    font-weight: normal;
+    font-weight: 500;
     line-height: 1.125em;
     display: flex;
     justify-content: flex-start;
@@ -140,7 +140,7 @@ h3,
 h4 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.125em;
-    font-weight: normal;
+    font-weight: 500;
     margin: 0;
 }
  
@@ -282,6 +282,8 @@ main {
 .hero-area {
     display: flex;
     justify-content: center;
+    background: url("../img/hero-img.jpg") no-repeat center;
+    background-size: cover;
 }
 
 .hero-area h1 {
@@ -316,6 +318,8 @@ aside .content-wrapper {
     display: flex;
     justify-content: center;
     width: 100%;
+    background: url("../img/features-img.jpg") no-repeat center;
+    background-size: cover;
 }
 
 .features .content-wrapper {
@@ -361,6 +365,10 @@ aside .content-wrapper {
 .reviews .content-wrapper {
     display: flex;
     flex-flow: row wrap;
+}
+
+.reviews img {
+    width: 100%;
 }
 
 .reviews h2 {
@@ -593,7 +601,7 @@ input[type=button] {
         font-family: "Poppins", sans-serif;
         font-size: 3em;
         line-height: 1em;
-        font-weight: normal;
+        font-weight: 500;
     }
 
     h2 {
@@ -618,7 +626,7 @@ input[type=button] {
     }
     
     header nav {
-        width: 35%;
+        width: 20%;
     }
 
     header nav ul {
@@ -643,8 +651,8 @@ input[type=button] {
 
     .hero-area h1 {
         width: 100%;
-        padding-top: 50px;
-        padding-bottom: 285px;
+        padding-bottom: 300px;
+        line-height: 1.2em;
     }
 
     /* Aside */
@@ -695,8 +703,14 @@ input[type=button] {
         justify-content: center;
     }
 
-    .reviews article div {
+    .reviews .company-img {
         width: 50%;
+        padding-top: 10px;
+    }
+
+    .reviews .company-review {
+        width: 50%;
+        padding-left: 40px;
     }
 
     .reviews h2 {
@@ -704,7 +718,8 @@ input[type=button] {
     }
 
     .reviews h3 {
-        width: 75%;
+        width: 80%;
+        padding-top: 0;
     }
 
     /* Footer */
