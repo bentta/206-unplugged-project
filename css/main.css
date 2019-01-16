@@ -466,7 +466,7 @@ aside .content-wrapper {
 }
 
 .contact-info h4 {
-    padding: 10px 0;
+    padding: 20px 0 10px 0;
 }
 
 .contact-section address.contact {
@@ -831,14 +831,75 @@ input[type=button] {
         margin: 0;
     }
 
-
-
-    .mission {
-        padding-top: 50px;
+    h2 {
+        font-size: 3em;
     }
 
+    h3. h4 {
+        font-size: 1.875em;
+    }
+
+    p {
+        font-size: 1.125em;
+    }
+
+    address p {
+        font-size: 1.125em;
+    }
+
+    /* HERO AREA */
+    .hero-area .content-wrapper {
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .hero-area h1 {
+        font-size: 3.75em;
+        padding-top: 50px;
+        padding-bottom: 400px;
+        width: 75%;
+    }
+
+    /* ASIDE/FORM */
+    aside {
+        width: 100%;
+    }
+
+    aside .content-wrapper {
+        max-width: 800px;
+    }
+    
+    .form-description, aside .content-wrapper .form {
+        width: 40%;
+        margin: 0;
+    }
+
+    input[type=text] {
+        padding: 20px 0;
+    }
+
+    input[type=button] {
+        padding: 20px 0;
+    }
+
+    /* FEATURES */
+    .features {
+        padding: 100px 0;
+    }
+
+    /* REVIEWS */
+    .reviews {
+        padding: 100px 0;
+    }
+
+    .reviews h2 {
+        width: 100%;
+        padding-bottom: 50px;
+    }
+
+    /**** ABOUT PAGE ****/
     .mission .content-wrapper {
-        margin-bottom: 50px;
+        margin-bottom: 100px;
     }
 
     .mission h2 {
@@ -850,35 +911,28 @@ input[type=button] {
         width: 100%;
     }
 
-    .contact-section {
-        padding-bottom: 50px;
-    }
-
     .contact-section .content-wrapper {
-        margin-top: 50px;
+        margin-top: 100px;
     }
 
-    /* ASIDE/FORM */
-    aside {
-        max-width: 800px;
-    }
-
-    aside .content-wrapper .form-description, aside .content-wrapper .form {
-        width: 40%;
-        margin: 0;
-    }
-
-    /* FEATURES */
-    .features {
-        margin: 100px 0;
-    }
-
-
-    /**** ABOUT PAGE ****/
     .contact-info {
         display: flex;
-        justify-content: space-between;
-        width: 65%;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .contact-info div {
+        margin-right: 150px;
+    }
+
+    .contact-info h4 {
+        font-size: 1.875em;
+        padding-bottom: 25px;
+    }
+
+    /**** FAQ PAGE ****/
+    .faq h3 {
+        font-size: 1.125em;
     }
 }
 
