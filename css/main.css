@@ -149,11 +149,11 @@ p {
 }
  
 img {
- 
+    width: 100%;
 }
- 
+
 figure {
- 
+    margin: 0;
 }
 
 address p {
@@ -197,19 +197,27 @@ header .content-wrapper {
     margin: 0;
 }
 
-header nav {
+header figure {
+    width: 60%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    width: 50%;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
 }
 
 header nav ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-left: 0;
-    width: 100%;
+    width: 55%;
 }
 
 footer {
@@ -615,7 +623,8 @@ input[type=button] {
     /* Header */
     header {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+        align-items: center;
         padding-bottom: 15px;
     }
     
@@ -625,13 +634,24 @@ input[type=button] {
         width: 100%;
     }
     
+    header figure {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-flow: row wrap;
+        width: 50%;
+    }
+
     header nav {
-        width: 20%;
+        display: flex;
+        justify-content: flex-end;
+        width: 50%;
     }
 
     header nav ul {
         display: flex;
         justify-content: space-between;
+        margin: 0;
     }
 
     .header-divider {
@@ -845,6 +865,13 @@ input[type=button] {
 
     address p {
         font-size: 1.125em;
+    }
+
+    /* HEADER */
+    header nav {
+        display: flex;
+        justify-content: flex-end;
+        width: 35%;
     }
 
     /* HERO AREA */
