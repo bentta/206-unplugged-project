@@ -224,12 +224,12 @@ header nav ul {
 
 footer {
     flex-direction: column;
+    background-color: #202322;
 }
 
 .footer-content {
     display: flex;
     justify-content: center;
-    flex-flow: row wrap;
     width: 100%;
 }
 
@@ -240,22 +240,11 @@ footer .content-wrapper {
 
 address.contact {
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-flow: column wrap;
     margin: 0;
     width: 100%;
     font-style: normal;
-}
-
-footer .social {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-footer {
-    background-color: #202322;
 }
 
 footer .contact p {
@@ -264,20 +253,37 @@ footer .contact p {
     margin-bottom: 40px;
 }
 
+footer .social {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
 footer .social-icons {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    width: 100%;
 }
 
 footer .social-icons p {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #527158;
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    margin-top: 14px;
+    margin-bottom: 0;
 }
 
 footer .copyright {
     margin-bottom: 20px;
+}
+
+footer .copyright p {
+    margin: 0;
 }
 
 /* ------------- Mobile Styles - Homepage ----------------- */
@@ -326,6 +332,7 @@ aside .content-wrapper {
 
 .features .content-wrapper {
     display: flex;
+    justify-content: flex-start;
     flex-flow: row wrap;
 }
 
@@ -747,10 +754,8 @@ input[type=button] {
         margin-bottom: 0;
     }
 
-    .social {
-        display: flex;
-        justify-content: center;
-        flex-flow: row wrap;
+    footer .social-icons {
+        max-width: 200px;
     }
 
     /**** ABOUT PAGE ****/
@@ -788,6 +793,7 @@ input[type=button] {
 
     .contact-section h2 {
         width: 70%;
+        margin-bottom: 25px;
     }
 
     .contact-info {
@@ -911,7 +917,7 @@ input[type=button] {
     /**** ABOUT PAGE ****/
     .mission .content-wrapper {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         flex-flow: row wrap;
         margin-bottom: 100px;
     }
